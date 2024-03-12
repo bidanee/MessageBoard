@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: skyblue;
+}
+.list-container {
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 16px;
+  padding: 10px;
+}
