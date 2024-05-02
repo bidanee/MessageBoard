@@ -1,13 +1,13 @@
-const names = ["danbi", "bidan"]
+import { Link } from "react-router-dom"
+import styles from "./Post.module.css"
 
-export default function Post() {
-  const randomName = Math.random() > 0.5 ? names[0] : names[1]
-  const nowTime = Date.now().toLocaleString()
-  console.log(nowTime)
+export default function Post({ id, author, body }) {
   return (
-    <div>
-      <p>{randomName}</p>
-      <p>빨리 빨리!!!!!!!!!!!</p>
-    </div>
+    <li className={styles.post}>
+      <Link to={id}>
+        <p className={styles.author}>{author}</p>
+        <p className={styles.text}>{body}</p>
+      </Link>
+    </li>
   )
 }
