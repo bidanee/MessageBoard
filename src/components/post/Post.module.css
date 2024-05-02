@@ -5,6 +5,7 @@
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   animation: animate-in 1s ease-out forwards;
+  height: 5rem;
 }
 
 .post a {
@@ -20,13 +21,14 @@
 }
 
 .text {
-  white-space: pre-wrap;
+  white-space: nowrap;
   font-size: 1.25rem;
   margin: 0.25rem 0 0 0;
   color: white;
   font-style: italic;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 @keyframes animate-in {
